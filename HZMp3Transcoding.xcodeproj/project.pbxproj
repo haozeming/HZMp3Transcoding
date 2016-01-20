@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		737681E11C4F33BA009BFA48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 737681E01C4F33BA009BFA48 /* main.m */; };
+		737681E41C4F33BA009BFA48 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 737681E31C4F33BA009BFA48 /* AppDelegate.m */; };
+		737681E71C4F33BA009BFA48 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 737681E61C4F33BA009BFA48 /* ViewController.m */; };
+		737681EA1C4F33BA009BFA48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 737681E81C4F33BA009BFA48 /* Main.storyboard */; };
+		737681EC1C4F33BA009BFA48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 737681EB1C4F33BA009BFA48 /* Assets.xcassets */; };
+		737681EF1C4F33BA009BFA48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 737681ED1C4F33BA009BFA48 /* LaunchScreen.storyboard */; };
+		737681FA1C4F33BA009BFA48 /* HZMp3TranscodingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 737681F91C4F33BA009BFA48 /* HZMp3TranscodingTests.m */; };
+		737682051C4F33BA009BFA48 /* HZMp3TranscodingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 737682041C4F33BA009BFA48 /* HZMp3TranscodingUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		737681F61C4F33BA009BFA48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 737681D41C4F33BA009BFA48 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 737681DB1C4F33BA009BFA48;
+			remoteInfo = HZMp3Transcoding;
+		};
+		737682011C4F33BA009BFA48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 737681D41C4F33BA009BFA48 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 737681DB1C4F33BA009BFA48;
+			remoteInfo = HZMp3Transcoding;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		737681DC1C4F33BA009BFA48 /* HZMp3Transcoding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HZMp3Transcoding.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		737681E01C4F33BA009BFA48 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		737681E21C4F33BA009BFA48 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		737681E31C4F33BA009BFA48 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		737681E51C4F33BA009BFA48 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		737681E61C4F33BA009BFA48 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		737681E91C4F33BA009BFA48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		737681EB1C4F33BA009BFA48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		737681EE1C4F33BA009BFA48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		737681F01C4F33BA009BFA48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		737681F51C4F33BA009BFA48 /* HZMp3TranscodingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HZMp3TranscodingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		737681F91C4F33BA009BFA48 /* HZMp3TranscodingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZMp3TranscodingTests.m; sourceTree = "<group>"; };
+		737681FB1C4F33BA009BFA48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		737682001C4F33BA009BFA48 /* HZMp3TranscodingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HZMp3TranscodingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		737682041C4F33BA009BFA48 /* HZMp3TranscodingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZMp3TranscodingUITests.m; sourceTree = "<group>"; };
+		737682061C4F33BA009BFA48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		737681D91C4F33BA009BFA48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		737681F21C4F33BA009BFA48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		737681FD1C4F33BA009BFA48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		737681D31C4F33BA009BFA48 = {
+			isa = PBXGroup;
+			children = (
+				737681DE1C4F33BA009BFA48 /* HZMp3Transcoding */,
+				737681F81C4F33BA009BFA48 /* HZMp3TranscodingTests */,
+				737682031C4F33BA009BFA48 /* HZMp3TranscodingUITests */,
+				737681DD1C4F33BA009BFA48 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		737681DD1C4F33BA009BFA48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				737681DC1C4F33BA009BFA48 /* HZMp3Transcoding.app */,
+				737681F51C4F33BA009BFA48 /* HZMp3TranscodingTests.xctest */,
+				737682001C4F33BA009BFA48 /* HZMp3TranscodingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		737681DE1C4F33BA009BFA48 /* HZMp3Transcoding */ = {
+			isa = PBXGroup;
+			children = (
+				737681E21C4F33BA009BFA48 /* AppDelegate.h */,
+				737681E31C4F33BA009BFA48 /* AppDelegate.m */,
+				737681E51C4F33BA009BFA48 /* ViewController.h */,
+				737681E61C4F33BA009BFA48 /* ViewController.m */,
+				737681E81C4F33BA009BFA48 /* Main.storyboard */,
+				737681EB1C4F33BA009BFA48 /* Assets.xcassets */,
+				737681ED1C4F33BA009BFA48 /* LaunchScreen.storyboard */,
+				737681F01C4F33BA009BFA48 /* Info.plist */,
+				737681DF1C4F33BA009BFA48 /* Supporting Files */,
+			);
+			path = HZMp3Transcoding;
+			sourceTree = "<group>";
+		};
+		737681DF1C4F33BA009BFA48 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				737681E01C4F33BA009BFA48 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		737681F81C4F33BA009BFA48 /* HZMp3TranscodingTests */ = {
+			isa = PBXGroup;
+			children = (
+				737681F91C4F33BA009BFA48 /* HZMp3TranscodingTests.m */,
+				737681FB1C4F33BA009BFA48 /* Info.plist */,
+			);
+			path = HZMp3TranscodingTests;
+			sourceTree = "<group>";
+		};
+		737682031C4F33BA009BFA48 /* HZMp3TranscodingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				737682041C4F33BA009BFA48 /* HZMp3TranscodingUITests.m */,
+				737682061C4F33BA009BFA48 /* Info.plist */,
+			);
+			path = HZMp3TranscodingUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		737681DB1C4F33BA009BFA48 /* HZMp3Transcoding */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 737682091C4F33BA009BFA48 /* Build configuration list for PBXNativeTarget "HZMp3Transcoding" */;
+			buildPhases = (
+				737681D81C4F33BA009BFA48 /* Sources */,
+				737681D91C4F33BA009BFA48 /* Frameworks */,
+				737681DA1C4F33BA009BFA48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HZMp3Transcoding;
+			productName = HZMp3Transcoding;
+			productReference = 737681DC1C4F33BA009BFA48 /* HZMp3Transcoding.app */;
+			productType = "com.apple.product-type.application";
+		};
+		737681F41C4F33BA009BFA48 /* HZMp3TranscodingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7376820C1C4F33BA009BFA48 /* Build configuration list for PBXNativeTarget "HZMp3TranscodingTests" */;
+			buildPhases = (
+				737681F11C4F33BA009BFA48 /* Sources */,
+				737681F21C4F33BA009BFA48 /* Frameworks */,
+				737681F31C4F33BA009BFA48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				737681F71C4F33BA009BFA48 /* PBXTargetDependency */,
+			);
+			name = HZMp3TranscodingTests;
+			productName = HZMp3TranscodingTests;
+			productReference = 737681F51C4F33BA009BFA48 /* HZMp3TranscodingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		737681FF1C4F33BA009BFA48 /* HZMp3TranscodingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7376820F1C4F33BA009BFA48 /* Build configuration list for PBXNativeTarget "HZMp3TranscodingUITests" */;
+			buildPhases = (
+				737681FC1C4F33BA009BFA48 /* Sources */,
+				737681FD1C4F33BA009BFA48 /* Frameworks */,
+				737681FE1C4F33BA009BFA48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				737682021C4F33BA009BFA48 /* PBXTargetDependency */,
+			);
+			name = HZMp3TranscodingUITests;
+			productName = HZMp3TranscodingUITests;
+			productReference = 737682001C4F33BA009BFA48 /* HZMp3TranscodingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		737681D41C4F33BA009BFA48 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Vega;
+				TargetAttributes = {
+					737681DB1C4F33BA009BFA48 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					737681F41C4F33BA009BFA48 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 737681DB1C4F33BA009BFA48;
+					};
+					737681FF1C4F33BA009BFA48 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 737681DB1C4F33BA009BFA48;
+					};
+				};
+			};
+			buildConfigurationList = 737681D71C4F33BA009BFA48 /* Build configuration list for PBXProject "HZMp3Transcoding" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 737681D31C4F33BA009BFA48;
+			productRefGroup = 737681DD1C4F33BA009BFA48 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				737681DB1C4F33BA009BFA48 /* HZMp3Transcoding */,
+				737681F41C4F33BA009BFA48 /* HZMp3TranscodingTests */,
+				737681FF1C4F33BA009BFA48 /* HZMp3TranscodingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		737681DA1C4F33BA009BFA48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				737681EF1C4F33BA009BFA48 /* LaunchScreen.storyboard in Resources */,
+				737681EC1C4F33BA009BFA48 /* Assets.xcassets in Resources */,
+				737681EA1C4F33BA009BFA48 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		737681F31C4F33BA009BFA48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		737681FE1C4F33BA009BFA48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		737681D81C4F33BA009BFA48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				737681E71C4F33BA009BFA48 /* ViewController.m in Sources */,
+				737681E41C4F33BA009BFA48 /* AppDelegate.m in Sources */,
+				737681E11C4F33BA009BFA48 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		737681F11C4F33BA009BFA48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				737681FA1C4F33BA009BFA48 /* HZMp3TranscodingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		737681FC1C4F33BA009BFA48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				737682051C4F33BA009BFA48 /* HZMp3TranscodingUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		737681F71C4F33BA009BFA48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 737681DB1C4F33BA009BFA48 /* HZMp3Transcoding */;
+			targetProxy = 737681F61C4F33BA009BFA48 /* PBXContainerItemProxy */;
+		};
+		737682021C4F33BA009BFA48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 737681DB1C4F33BA009BFA48 /* HZMp3Transcoding */;
+			targetProxy = 737682011C4F33BA009BFA48 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		737681E81C4F33BA009BFA48 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				737681E91C4F33BA009BFA48 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		737681ED1C4F33BA009BFA48 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				737681EE1C4F33BA009BFA48 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		737682071C4F33BA009BFA48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		737682081C4F33BA009BFA48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7376820A1C4F33BA009BFA48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HZMp3Transcoding/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Vega.HZMp3Transcoding;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7376820B1C4F33BA009BFA48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HZMp3Transcoding/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Vega.HZMp3Transcoding;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7376820D1C4F33BA009BFA48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HZMp3TranscodingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Vega.HZMp3TranscodingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HZMp3Transcoding.app/HZMp3Transcoding";
+			};
+			name = Debug;
+		};
+		7376820E1C4F33BA009BFA48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HZMp3TranscodingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Vega.HZMp3TranscodingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HZMp3Transcoding.app/HZMp3Transcoding";
+			};
+			name = Release;
+		};
+		737682101C4F33BA009BFA48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HZMp3TranscodingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Vega.HZMp3TranscodingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HZMp3Transcoding;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		737682111C4F33BA009BFA48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HZMp3TranscodingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Vega.HZMp3TranscodingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HZMp3Transcoding;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		737681D71C4F33BA009BFA48 /* Build configuration list for PBXProject "HZMp3Transcoding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				737682071C4F33BA009BFA48 /* Debug */,
+				737682081C4F33BA009BFA48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		737682091C4F33BA009BFA48 /* Build configuration list for PBXNativeTarget "HZMp3Transcoding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7376820A1C4F33BA009BFA48 /* Debug */,
+				7376820B1C4F33BA009BFA48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7376820C1C4F33BA009BFA48 /* Build configuration list for PBXNativeTarget "HZMp3TranscodingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7376820D1C4F33BA009BFA48 /* Debug */,
+				7376820E1C4F33BA009BFA48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7376820F1C4F33BA009BFA48 /* Build configuration list for PBXNativeTarget "HZMp3TranscodingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				737682101C4F33BA009BFA48 /* Debug */,
+				737682111C4F33BA009BFA48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 737681D41C4F33BA009BFA48 /* Project object */;
+}
