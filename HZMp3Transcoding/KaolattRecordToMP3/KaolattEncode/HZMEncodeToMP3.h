@@ -8,13 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import "lame/lame.h"
-@interface KaolattEncodeToMP3 : NSObject
+@interface HZMEncodeToMP3 : NSObject
 {
     lame_t lame;
     FILE *kaolattMP3File;
-    NSString *_kaolattMP3FilePath;
 }
-@property (nonatomic, strong) NSString *kaolattMP3FilePath;
+@property (nonatomic, strong) NSString *mp3FilePath;
 
 /* !
  * @method 初始化

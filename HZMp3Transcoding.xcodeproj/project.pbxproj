@@ -10,11 +10,12 @@
 		737681E11C4F33BA009BFA48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 737681E01C4F33BA009BFA48 /* main.m */; };
 		737681E41C4F33BA009BFA48 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 737681E31C4F33BA009BFA48 /* AppDelegate.m */; };
 		737681E71C4F33BA009BFA48 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 737681E61C4F33BA009BFA48 /* ViewController.m */; };
-		737681EA1C4F33BA009BFA48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 737681E81C4F33BA009BFA48 /* Main.storyboard */; };
 		737681EC1C4F33BA009BFA48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 737681EB1C4F33BA009BFA48 /* Assets.xcassets */; };
-		737681EF1C4F33BA009BFA48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 737681ED1C4F33BA009BFA48 /* LaunchScreen.storyboard */; };
 		737681FA1C4F33BA009BFA48 /* HZMp3TranscodingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 737681F91C4F33BA009BFA48 /* HZMp3TranscodingTests.m */; };
 		737682051C4F33BA009BFA48 /* HZMp3TranscodingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 737682041C4F33BA009BFA48 /* HZMp3TranscodingUITests.m */; };
+		737682B01C4F7AD3009BFA48 /* HZMEncodeToMP3.m in Sources */ = {isa = PBXBuildFile; fileRef = 737682A91C4F7AD3009BFA48 /* HZMEncodeToMP3.m */; };
+		737682B11C4F7AD3009BFA48 /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 737682AC1C4F7AD3009BFA48 /* libmp3lame.a */; };
+		737682B21C4F7AD4009BFA48 /* HZMAQRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 737682AF1C4F7AD3009BFA48 /* HZMAQRecord.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,9 +42,7 @@
 		737681E31C4F33BA009BFA48 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		737681E51C4F33BA009BFA48 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		737681E61C4F33BA009BFA48 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		737681E91C4F33BA009BFA48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		737681EB1C4F33BA009BFA48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		737681EE1C4F33BA009BFA48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		737681F01C4F33BA009BFA48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		737681F51C4F33BA009BFA48 /* HZMp3TranscodingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HZMp3TranscodingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		737681F91C4F33BA009BFA48 /* HZMp3TranscodingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZMp3TranscodingTests.m; sourceTree = "<group>"; };
@@ -51,6 +50,12 @@
 		737682001C4F33BA009BFA48 /* HZMp3TranscodingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HZMp3TranscodingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		737682041C4F33BA009BFA48 /* HZMp3TranscodingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZMp3TranscodingUITests.m; sourceTree = "<group>"; };
 		737682061C4F33BA009BFA48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		737682A81C4F7AD3009BFA48 /* HZMEncodeToMP3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZMEncodeToMP3.h; sourceTree = "<group>"; };
+		737682A91C4F7AD3009BFA48 /* HZMEncodeToMP3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZMEncodeToMP3.m; sourceTree = "<group>"; };
+		737682AB1C4F7AD3009BFA48 /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
+		737682AC1C4F7AD3009BFA48 /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
+		737682AE1C4F7AD3009BFA48 /* HZMAQRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZMAQRecord.h; sourceTree = "<group>"; };
+		737682AF1C4F7AD3009BFA48 /* HZMAQRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZMAQRecord.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				737682B11C4F7AD3009BFA48 /* libmp3lame.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,13 +107,12 @@
 		737681DE1C4F33BA009BFA48 /* HZMp3Transcoding */ = {
 			isa = PBXGroup;
 			children = (
+				737682A61C4F7AD3009BFA48 /* HZMRecordToMP3 */,
 				737681E21C4F33BA009BFA48 /* AppDelegate.h */,
 				737681E31C4F33BA009BFA48 /* AppDelegate.m */,
 				737681E51C4F33BA009BFA48 /* ViewController.h */,
 				737681E61C4F33BA009BFA48 /* ViewController.m */,
-				737681E81C4F33BA009BFA48 /* Main.storyboard */,
 				737681EB1C4F33BA009BFA48 /* Assets.xcassets */,
-				737681ED1C4F33BA009BFA48 /* LaunchScreen.storyboard */,
 				737681F01C4F33BA009BFA48 /* Info.plist */,
 				737681DF1C4F33BA009BFA48 /* Supporting Files */,
 			);
@@ -138,6 +143,46 @@
 				737682061C4F33BA009BFA48 /* Info.plist */,
 			);
 			path = HZMp3TranscodingUITests;
+			sourceTree = "<group>";
+		};
+		737682A61C4F7AD3009BFA48 /* HZMRecordToMP3 */ = {
+			isa = PBXGroup;
+			children = (
+				737682A71C4F7AD3009BFA48 /* HZMEncode */,
+				737682AD1C4F7AD3009BFA48 /* HZMRecord */,
+			);
+			name = HZMRecordToMP3;
+			path = KaolattRecordToMP3;
+			sourceTree = "<group>";
+		};
+		737682A71C4F7AD3009BFA48 /* HZMEncode */ = {
+			isa = PBXGroup;
+			children = (
+				737682A81C4F7AD3009BFA48 /* HZMEncodeToMP3.h */,
+				737682A91C4F7AD3009BFA48 /* HZMEncodeToMP3.m */,
+				737682AA1C4F7AD3009BFA48 /* lame */,
+			);
+			name = HZMEncode;
+			path = KaolattEncode;
+			sourceTree = "<group>";
+		};
+		737682AA1C4F7AD3009BFA48 /* lame */ = {
+			isa = PBXGroup;
+			children = (
+				737682AB1C4F7AD3009BFA48 /* lame.h */,
+				737682AC1C4F7AD3009BFA48 /* libmp3lame.a */,
+			);
+			path = lame;
+			sourceTree = "<group>";
+		};
+		737682AD1C4F7AD3009BFA48 /* HZMRecord */ = {
+			isa = PBXGroup;
+			children = (
+				737682AE1C4F7AD3009BFA48 /* HZMAQRecord.h */,
+				737682AF1C4F7AD3009BFA48 /* HZMAQRecord.m */,
+			);
+			name = HZMRecord;
+			path = KaolattRecord;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,9 +288,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				737681EF1C4F33BA009BFA48 /* LaunchScreen.storyboard in Resources */,
 				737681EC1C4F33BA009BFA48 /* Assets.xcassets in Resources */,
-				737681EA1C4F33BA009BFA48 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +313,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				737682B01C4F7AD3009BFA48 /* HZMEncodeToMP3.m in Sources */,
+				737682B21C4F7AD4009BFA48 /* HZMAQRecord.m in Sources */,
 				737681E71C4F33BA009BFA48 /* ViewController.m in Sources */,
 				737681E41C4F33BA009BFA48 /* AppDelegate.m in Sources */,
 				737681E11C4F33BA009BFA48 /* main.m in Sources */,
@@ -306,25 +351,6 @@
 			targetProxy = 737682011C4F33BA009BFA48 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		737681E81C4F33BA009BFA48 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				737681E91C4F33BA009BFA48 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		737681ED1C4F33BA009BFA48 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				737681EE1C4F33BA009BFA48 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		737682071C4F33BA009BFA48 /* Debug */ = {
@@ -363,7 +389,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -401,7 +427,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -413,10 +439,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = HZMp3Transcoding/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HZMp3Transcoding/KaolattRecordToMP3/KaolattEncode/lame",
+				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = Vega.HZMp3Transcoding;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Debug;
 		};
@@ -424,10 +459,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = HZMp3Transcoding/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HZMp3Transcoding/KaolattRecordToMP3/KaolattEncode/lame",
+				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = Vega.HZMp3Transcoding;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Release;
 		};
@@ -498,6 +542,7 @@
 				7376820B1C4F33BA009BFA48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7376820C1C4F33BA009BFA48 /* Build configuration list for PBXNativeTarget "HZMp3TranscodingTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +551,7 @@
 				7376820E1C4F33BA009BFA48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7376820F1C4F33BA009BFA48 /* Build configuration list for PBXNativeTarget "HZMp3TranscodingUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +560,7 @@
 				737682111C4F33BA009BFA48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
