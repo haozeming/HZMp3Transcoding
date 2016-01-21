@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "HZMAQRecord.h"
+#import "HZMRecord.h"
 
 @interface ViewController ()
 
@@ -48,8 +48,8 @@
 #pragma mark--
 #pragma mark-- 开始录音
 -(void)startMethod:(UIButton *)sender {
-    [[HZMAQRecord sharedManager] startRecord];
-    [HZMAQRecord sharedManager].RecordeFinishedBlock = ^(NSString *filePath) {
+    [[HZMRecord sharedManager] startRecord];
+    [HZMRecord sharedManager].RecordeFinishedBlock = ^(NSString *filePath) {
         _mp3FilePath = filePath;
     };
 }
@@ -57,17 +57,14 @@
 #pragma mark--
 #pragma mark-- 结束录音
 -(void)endMethod:(UIButton *)sender {
-    [[HZMAQRecord sharedManager] endRecord];
+    [[HZMRecord sharedManager] endRecord];
 }
 
 #pragma mark--
 #pragma mark-- 预听录音
 -(void)listenethod:(UIButton *)sender {
-    //静音状态下播放
     [[AVAudioSession sharedInstance] setActive:YES error:nil];
-    //后台播放
     [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
-    //远程控制：打完电话继续播放
     [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
     
     NSError *playerError;

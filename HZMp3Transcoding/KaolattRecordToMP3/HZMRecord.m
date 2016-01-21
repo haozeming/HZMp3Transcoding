@@ -1,21 +1,21 @@
 //
-//  KaolattAQRecord.m
-//  RecordTest
+//  HZMRecord.m
+//  HZMp3Transcoding
 //
-//  Created by 郝泽明 on 14/10/21.
-//  Copyright (c) 2014年 车语传媒. All rights reserved.
+//  Created by 郝泽明 on 16/1/21.
+//  Copyright © 2016年 Vega. All rights reserved.
 //
 
-#import "HZMAQRecord.h"
-@implementation HZMAQRecord
+#import "HZMRecord.h"
 
+@implementation HZMRecord
 #pragma mark--
 #pragma mark-- 初始化
 +(instancetype)sharedManager {
-    static HZMAQRecord *_aQRecord = nil;
+    static HZMRecord *_aQRecord = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        _aQRecord = [[HZMAQRecord alloc] init];
+        _aQRecord = [[HZMRecord alloc] init];
     });
     return _aQRecord;
 }
@@ -23,10 +23,13 @@
 #pragma mark--
 #pragma mark-- 开始录音
 -(void)startRecord {
-    _encodeToMP3 = [[HZMEncodeToMP3 alloc] init];
+/*解码*/
+    self.encode = [[HZMEncode alloc] init];
+/*文件写入队列*/
     _writeFileQueue = dispatch_queue_create("AudioRecorder.writeFileQueue", NULL);
     _recordTime = 0;
-
+    
+/*录音*/
     _audioSession = [AVAudioSession sharedInstance];
     NSError *sessionError;
     [_audioSession setCategory:AVAudioSessionCategoryPlayAndRecord error:&sessionError];
@@ -38,6 +41,7 @@
     }
     [self settingBaseForamt];
     AudioQueueStart(_audioQueue, NULL);
+    
 /*录音时间*/
     _recordTime = 0;
     _recordTimer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(recordeTime) userInfo:nil repeats:YES];
@@ -52,19 +56,19 @@
     [_audioSession setActive:NO error:&sessionError];
     [_recordTimer invalidate];
     if (self.RecordeFinishedBlock) {
-        self.RecordeFinishedBlock(_encodeToMP3.mp3FilePath);
+        self.RecordeFinishedBlock(_encode.mp3FilePath);
     }
 }
 
 #pragma mark--
 #pragma mark-- 录音回调
 void AduioRecordAQInputCallBack(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRef inBuffer, const AudioTimeStamp *inStartTime, UInt32 inNumberPacketDescriptions, const AudioStreamPacketDescription *inPacketDescs) {
-    HZMAQRecord *aQRecord = (__bridge HZMAQRecord *)inUserData;
+    HZMRecord *aQRecord = (__bridge HZMRecord *)inUserData;
     if (inNumberPacketDescriptions > 0) {
         NSData *pcmData = [[NSData alloc] initWithBytes:inBuffer->mAudioData length:inBuffer->mAudioDataByteSize];
         if (pcmData && pcmData.length > 0) {
             dispatch_async(aQRecord.writeFileQueue, ^{
-                [aQRecord.encodeToMP3 encodeToMP3With:pcmData];
+                [aQRecord.encode encodeToMP3With:pcmData];
             });
         }
     }
@@ -121,4 +125,5 @@ void AduioRecordAQInputCallBack(void *inUserData, AudioQueueRef inAQ, AudioQueue
         self.RecordeTimeBlock(recordeTime);
     }
 }
+
 @end

@@ -1,15 +1,15 @@
 //
-//  KaolattAQRecord.h
-//  RecordTest
+//  HZMRecord.h
+//  HZMp3Transcoding
 //
-//  Created by 郝泽明 on 14/10/21.
-//  Copyright (c) 2014年 车语传媒. All rights reserved.
+//  Created by 郝泽明 on 16/1/21.
+//  Copyright © 2016年 Vega. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <AudioToolbox/AudioToolbox.h>
 #import <AVFoundation/AVFoundation.h>
-#import "HZMEncodeToMP3.h"
+#import "HZMEncode.h"
 
 /*队列缓冲个数*/
 #define MP3_QUEUE_BUFFER_SIZE 3
@@ -18,7 +18,7 @@
 /*每侦最小数据长度*/
 #define MP3_MIN_SIZE_PER_FRAME 1152
 
-@interface HZMAQRecord : NSObject
+@interface HZMRecord : NSObject
 {
 /*音频参数*/
     AudioStreamBasicDescription _audioDescription;
@@ -34,7 +34,7 @@
 }
 
 /*转码类*/
-@property (nonatomic, strong) HZMEncodeToMP3 *encodeToMP3;
+@property (nonatomic, strong) HZMEncode *encode;
 /*文件写入标示*/
 @property (nonatomic, strong) dispatch_queue_t writeFileQueue;
 @property (nonatomic, strong) dispatch_semaphore_t semError;

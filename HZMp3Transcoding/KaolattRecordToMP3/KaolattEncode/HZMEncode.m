@@ -1,17 +1,18 @@
 //
-//  KaolattEncodeToMP3.m
-//  RecordTest
+//  HZMEncode.m
+//  HZMp3Transcoding
 //
-//  Created by 郝泽明 on 14/10/21.
-//  Copyright (c) 2014年 车语传媒. All rights reserved.
+//  Created by 郝泽明 on 16/1/21.
+//  Copyright © 2016年 Vega. All rights reserved.
 //
 
-#import "HZMEncodeToMP3.h"
+#import "HZMEncode.h"
 
-@implementation HZMEncodeToMP3
+@implementation HZMEncode
+
 #pragma mark--
 #pragma mark-- 初始化
--(id)init {
+-(instancetype)init {
     self = [super init];
     if (self) {
         [self settingEncodeFormat];
@@ -37,7 +38,7 @@
     NSString *mp3FileName = @"MP3File";
     mp3FileName = [mp3FileName stringByAppendingString:@".mp3"];
     self.mp3FilePath = [[NSHomeDirectory() stringByAppendingFormat:@"/Documents/"] stringByAppendingPathComponent:mp3FileName];
-    kaolattMP3File = fopen([self.mp3FilePath cStringUsingEncoding:1], "wb");
+    mp3File = fopen([self.mp3FilePath cStringUsingEncoding:1], "wb");
 }
 
 #pragma mark--
@@ -54,6 +55,7 @@
 /*编码－－－交叉编码（双声道）*/
     int recvlen = lame_encode_buffer_interleaved(lame, encodeData, nsamples, buffer, encodeDataLen);
 /*写入文件*/
-    fwrite(buffer, recvlen, 1, kaolattMP3File);
+    fwrite(buffer, recvlen, 1, mp3File);
 }
+
 @end

@@ -13,9 +13,9 @@
 		737681EC1C4F33BA009BFA48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 737681EB1C4F33BA009BFA48 /* Assets.xcassets */; };
 		737681FA1C4F33BA009BFA48 /* HZMp3TranscodingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 737681F91C4F33BA009BFA48 /* HZMp3TranscodingTests.m */; };
 		737682051C4F33BA009BFA48 /* HZMp3TranscodingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 737682041C4F33BA009BFA48 /* HZMp3TranscodingUITests.m */; };
-		737682B01C4F7AD3009BFA48 /* HZMEncodeToMP3.m in Sources */ = {isa = PBXBuildFile; fileRef = 737682A91C4F7AD3009BFA48 /* HZMEncodeToMP3.m */; };
 		737682B11C4F7AD3009BFA48 /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 737682AC1C4F7AD3009BFA48 /* libmp3lame.a */; };
-		737682B21C4F7AD4009BFA48 /* HZMAQRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 737682AF1C4F7AD3009BFA48 /* HZMAQRecord.m */; };
+		73B095731C507AD50024E88F /* HZMRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 73B095721C507AD50024E88F /* HZMRecord.m */; };
+		73B095761C507C300024E88F /* HZMEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = 73B095751C507C300024E88F /* HZMEncode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,12 +50,12 @@
 		737682001C4F33BA009BFA48 /* HZMp3TranscodingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HZMp3TranscodingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		737682041C4F33BA009BFA48 /* HZMp3TranscodingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZMp3TranscodingUITests.m; sourceTree = "<group>"; };
 		737682061C4F33BA009BFA48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		737682A81C4F7AD3009BFA48 /* HZMEncodeToMP3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZMEncodeToMP3.h; sourceTree = "<group>"; };
-		737682A91C4F7AD3009BFA48 /* HZMEncodeToMP3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZMEncodeToMP3.m; sourceTree = "<group>"; };
 		737682AB1C4F7AD3009BFA48 /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
 		737682AC1C4F7AD3009BFA48 /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
-		737682AE1C4F7AD3009BFA48 /* HZMAQRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZMAQRecord.h; sourceTree = "<group>"; };
-		737682AF1C4F7AD3009BFA48 /* HZMAQRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZMAQRecord.m; sourceTree = "<group>"; };
+		73B095711C507AD50024E88F /* HZMRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZMRecord.h; sourceTree = "<group>"; };
+		73B095721C507AD50024E88F /* HZMRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZMRecord.m; sourceTree = "<group>"; };
+		73B095741C507C300024E88F /* HZMEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZMEncode.h; sourceTree = "<group>"; };
+		73B095751C507C300024E88F /* HZMEncode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZMEncode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,8 +148,9 @@
 		737682A61C4F7AD3009BFA48 /* HZMRecordToMP3 */ = {
 			isa = PBXGroup;
 			children = (
+				73B095711C507AD50024E88F /* HZMRecord.h */,
+				73B095721C507AD50024E88F /* HZMRecord.m */,
 				737682A71C4F7AD3009BFA48 /* HZMEncode */,
-				737682AD1C4F7AD3009BFA48 /* HZMRecord */,
 			);
 			name = HZMRecordToMP3;
 			path = KaolattRecordToMP3;
@@ -158,8 +159,8 @@
 		737682A71C4F7AD3009BFA48 /* HZMEncode */ = {
 			isa = PBXGroup;
 			children = (
-				737682A81C4F7AD3009BFA48 /* HZMEncodeToMP3.h */,
-				737682A91C4F7AD3009BFA48 /* HZMEncodeToMP3.m */,
+				73B095741C507C300024E88F /* HZMEncode.h */,
+				73B095751C507C300024E88F /* HZMEncode.m */,
 				737682AA1C4F7AD3009BFA48 /* lame */,
 			);
 			name = HZMEncode;
@@ -173,16 +174,6 @@
 				737682AC1C4F7AD3009BFA48 /* libmp3lame.a */,
 			);
 			path = lame;
-			sourceTree = "<group>";
-		};
-		737682AD1C4F7AD3009BFA48 /* HZMRecord */ = {
-			isa = PBXGroup;
-			children = (
-				737682AE1C4F7AD3009BFA48 /* HZMAQRecord.h */,
-				737682AF1C4F7AD3009BFA48 /* HZMAQRecord.m */,
-			);
-			name = HZMRecord;
-			path = KaolattRecord;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,8 +304,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				737682B01C4F7AD3009BFA48 /* HZMEncodeToMP3.m in Sources */,
-				737682B21C4F7AD4009BFA48 /* HZMAQRecord.m in Sources */,
+				73B095731C507AD50024E88F /* HZMRecord.m in Sources */,
+				73B095761C507C300024E88F /* HZMEncode.m in Sources */,
 				737681E71C4F33BA009BFA48 /* ViewController.m in Sources */,
 				737681E41C4F33BA009BFA48 /* AppDelegate.m in Sources */,
 				737681E11C4F33BA009BFA48 /* main.m in Sources */,
